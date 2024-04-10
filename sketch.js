@@ -1,29 +1,4 @@
-// Initialize an empty array to store the particle objects
-/* skhandha | aggregate (V. 3)
-Skandha (स्कन्ध) is a Sanskrit word that means "multitude, quantity, aggregate", generally in the context of body, trunk, stem, empirically observed gross object or anything of bulk verifiable with senses. The term appears in the Vedic literature.
-The Pali equivalent word Khandha (sometimes spelled Kkhanda) appears extensively in the Pali canon where it means "bulk of the body, aggregate, heap, material collected into bulk" in one context, "all that is comprised under, groupings" in some contexts, and particularly as "the elements or substrata of sensory existence, sensorial aggregates which condition the appearance of life in any form". Paul Williams et al. translate skandha as "heap, aggregate", stating it refers to the explanation of the psychophysical makeup of any being.
-Live app here:
-https://marlonbarrios.github.io/skhandhas/
-concept, programming and music by marlon barrios solano
-#generativeart #creativecoding #musicvideo #music #bhuddhistart
 
-The "ameba-like" movement of ellipses after 5 minutes of running your sketch can be attributed to several interacting factors in your code. These factors stem from the behavioral rules set for the particles, particularly how they move, interact, and form connections. Here's an analysis:
-
-Continuous Addition of Particles: New particles are added at regular intervals until the maximum limit is reached. This continuous injection of "fresh" particles into the system introduces new dynamics and interactions, keeping the system lively and changing.
-
-Collision Handling and Line Drawing: When particles come close to each other (touching or within a 50-pixel range), lines are drawn between them, and their positions are adjusted to avoid overlap. This behavior not only prevents particles from clustering too densely but also creates a network of lines that visually connect the particles, resembling the pseudopodia of an amoeba.
-
-Formation Behavior: The toggling of formation behavior at random intervals directs particles to move towards a common target or disperse. This periodic gathering and dispersing, combined with the constant addition of new particles, creates a dynamic that resembles the flowing movement of an amoeba, where parts of it extend and retract as it moves.
-
-Curvy Movement and Edge Bouncing: Particles have a curve factor applied to their movement, causing them to travel in slightly curved paths rather than straight lines. Additionally, particles bounce off the edges of the canvas, further contributing to the dynamic, fluid-like motion of the aggregate.
-
-Decay and Renewal: The lifespan of each particle ensures that older particles eventually "die" and are removed from the system, while new ones continue to be added. This cycle of decay and renewal helps maintain a dynamic equilibrium, preventing the system from becoming static or overcrowded.
-
-Visual Trails: The slight transparency in the background redraw creates visual trails of particle movement, adding to the overall fluid and organic appearance of the motion.
-
-Combining these elements—collision handling, line drawing, formation behaviors, curvy motion, edge bouncing, decay and renewal, and visual trails—results in a complex system where particles dynamically interact in ways that visually mimic organic, amoeba-like movements. The system's emergent behavior is a direct consequence of these simple rules interacting over time, showcasing the power of generative art to create complex and lifelike patterns from basic principles.
-
-*/
 let particles = [];
 let maxParticles = 800; // Set the maximum number of particles
 let addParticleInterval = 10; // Interval (in frames) for adding new particles
